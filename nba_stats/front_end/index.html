@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>NBA Stats Database</title>
+</head>
+<body>
+    <div class="container">
+        <h1>NBA Stats Database</h1>
+        <ol>
+            <li>Add a game
+                <select class="teamSelect" id="1a"></select>
+                <select class="teamSelect" id="1b"></select>
+                <input type="text" id="1c">
+                <input type="text" id="1d">
+                <input type="text" id="1e">
+                <button onclick="addGame()">Submit</button>                
+            </li>
+            <li>Add a player
+                <select class="teamSelect" id="2a"></select>
+                <input type="text" id="2b">
+                <input type="text" id="2c">
+                <select class="positionSelect" id="2d"></select>
+                <button onclick="addPlayer()">Submit</button>
+            </li>
+            <li>View all of the players on a team
+                <select class="teamSelect" id="3"></select>
+                <button onclick="viewPlayersByTeam()">Submit</button>
+            </li>
+            <li>View players by position
+                <select class="positionSelect" id="4"></select>
+                <button onclick="viewPlayersByPos()">Submit</button>
+            </li>    
+            <li>View conference standings
+                <select class="confSelect" id="5"></select>
+                <button onclick="viewStandings()">Submit</button>
+            </li>
+            <li>View all of the games played by a team
+                <select class="teamSelect" id="6"></select>
+                <button onclick="viewTeamsGames()">Submit</button>
+            </li>
+            <li>View the results on a given date
+                <input type="text" id="7">
+                <button onclick="viewResultsFromDate()">Submit</button>
+            </li>
+            <li>View every matchup between two teams
+                <select class="teamSelect" id="8a"></select>
+                <select class="teamSelect" id="8b"></select>
+                <button onclick="viewTeamMatchups()">Submit</button>
+            </li>
+        </ol>
+
+        <h1>Results</h1>
+        <table class="resultsTable"></table>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+</html>
